@@ -1,0 +1,16 @@
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+---
+spring:  
+  profiles: jiu-jitsu
+dojo:
+  discipline: bjj
+---
+spring:  
+  profiles: judo
+dojo:
+  discipline: judo

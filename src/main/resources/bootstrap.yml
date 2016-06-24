@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: training-grounds
+#uncomment for testing using local instance of config-server
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
