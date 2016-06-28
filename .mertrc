@@ -1,0 +1,6 @@
+layout:
+  -
+    - cd dojo && mvn spring-boot:run
+  -
+    - cd config-server && mvn spring-boot:run
+    - cd naming-server && mvn spring-boot:run
