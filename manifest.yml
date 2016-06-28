@@ -1,0 +1,10 @@
+---
+applications:
+- name: training-grounds
+  host: ashumilov-tg
+  path: target/dojo.jar
+  services:
+    - config-server
+    - service-registry
+  env:
+    SPRING_PROFILES_ACTIVE: jiu-jitsu,dev
