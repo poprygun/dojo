@@ -2,4 +2,4 @@
 
 cd resource-dojo
 mvn package
-mv target/dojo.war ../output/dojo.war
+mv target/dojo.jar ../output/dojo.jar
