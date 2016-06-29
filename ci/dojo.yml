@@ -26,5 +26,5 @@ jobs:
       file: resource-dojo/ci/tasks/maven-package.yml
     - put: resource-deploy-dojo
       params:
-        manifest: resource-music-repo/manifest.yml
+        manifest: resource-dojo/manifest.yml
         path: output/dojo.jar

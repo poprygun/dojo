@@ -15,4 +15,4 @@ outputs:
 run:
   path: sh
   args:
-    - resource-music-repo/ci/tasks/maven-package.sh
+    - resource-dojo/ci/tasks/maven-package.sh
