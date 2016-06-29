@@ -7,7 +7,7 @@ image_resource:
     tag: latest
 
 inputs:
-  - name: dojo-repo
+  - name: resource-dojo
 
 outputs:
   - name: output
