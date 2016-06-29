@@ -27,4 +27,4 @@ jobs:
     - put: resource-deploy-dojo
       params:
         manifest: resource-music-repo/manifest.yml
-        path: output/spring-music.war
+        path: output/dojo.jar
