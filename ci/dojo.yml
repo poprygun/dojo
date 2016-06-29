@@ -4,7 +4,6 @@ resources:
   source:
     uri: https://github.com/poprygun/dojo.git
     branch: master
-
 - name: resource-deploy-dojo
   type: cf
   source:
@@ -14,7 +13,6 @@ resources:
     organization: pivot-ashumilov
     space: development
     skip_cert_check: true
-
 jobs:
   - name: deploy-pez
     plan:
