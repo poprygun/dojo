@@ -1,0 +1,30 @@
+resources:
+- name: resource-dojo
+  type: git
+  source:
+    uri: https://github.com/poprygun/dojo.git
+    branch: master
+
+- name: resource-deploy-dojo
+  type: cf
+  source:
+    api: https://api.run.pez.pivotal.io
+    username: {{api-username}}
+    password: {{api-password}}
+    organization: pivot-ashumilov
+    space: development
+    skip_cert_check: true
+
+jobs:
+  - name: deploy-pez
+    plan:
+    - aggregate:
+      - get: resource-dojo
+        trigger: true
+    - task: maven-package
+      privileged: true
+      file: resource-dojo/ci/tasks/maven-package.yml
+    - put: resource-deploy-dojo
+      params:
+        manifest: resource-music-repo/manifest.yml
+        path: output/spring-music.war
