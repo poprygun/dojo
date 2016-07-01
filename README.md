@@ -4,7 +4,7 @@ This is a project demonstrates the use of configuration service deployed to Pivo
 ## Test REST API Call
 | Resource        | Method           | Description  |
 | --- | --- | --- |
-| `/techniques` | GET | Queries the list of techniques.  Returned set should change based on passed profile - either judo, or jiu-jitsu. |
+| `/techniques/search/findByDiscipline?discipline=[bjj or judo]` | GET | Queries the list of techniques.  Returned set should change based on passed profile - either judo, or jiu-jitsu. |
 | `/env` | GET | Queries the environment of the app.  Data under configService nodes served by config server. |
 
 ## Configuration Server

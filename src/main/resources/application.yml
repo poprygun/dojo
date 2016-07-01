@@ -4,6 +4,10 @@ security:
 management:
   security:
     enabled: false
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
 ---
 spring:  
   profiles: jiu-jitsu

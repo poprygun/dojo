@@ -1,12 +1,22 @@
 package io.pivotal.tg;
 
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Data
-@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@RequiredArgsConstructor
+@NoArgsConstructor
+@Entity
 public class Technique {
+    @Id
+    @GeneratedValue
+    private Long id;
+    @NonNull
     private String name;
+    @NonNull
+    private String discipline;
 }
