@@ -2,9 +2,9 @@ package io.pivotal.tg.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.config.java.AbstractCloudConfig;
-import org.springframework.cloud.config.java.CloudScan;
 import org.springframework.cloud.service.PooledServiceConnectorConfig;
 import org.springframework.context.annotation.Bean;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
@@ -13,6 +13,7 @@ import javax.sql.DataSource;
 
 //@Profile("cloud")
 //@Configuration
+//todo this bean breaks eureka discovery service
 public class DataSourceConfig extends AbstractCloudConfig {
     public static final String DEFAULT_DB_MAX_POOL_SIZE = "10";
 

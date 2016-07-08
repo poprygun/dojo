@@ -17,7 +17,8 @@ public class TechniqueController {
     private String discipline;
 
     @RequestMapping("/techniques")
-    public List<Technique> techniques() {
+    public List<Technique> techniques() throws Exception{
+
         if (Discipline.BJJ.toString().equalsIgnoreCase(discipline)) {
             return Arrays.asList(new Technique("omoplata", "bjj"), new Technique("de la riva", "bjj"));
         } else {
